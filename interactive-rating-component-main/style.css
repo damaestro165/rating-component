@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: hsl(216, 12%, 8%);
+  }
+  #container {
+    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 12%));
+  }
+}

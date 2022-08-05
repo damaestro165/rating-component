@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/output.css">
+    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: aliceblue;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class=" max-w-[1000px] w-full  grid h-screen place-items-center">
+    <div id= "container" class=" rating container mx-auto w-4/5 md:w-2/6 md:p-10 sm:h-70 rounded-2xl p-5">
+      <div class="rounded-full p-4 mb-4 flex justify-center items-center bg-gray-800 w-12"><img class="" src="./images/icon-star.svg"/></div>
+      <p class="text-white text-2xl font-semibold mb-2 " >How did we do?</p>
+      <p class="text-gray-500 text-xs font-medium text-start md:text-sm">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="flex flex-rol items-center justify-between  my-5">
+        
+          <input type="radio" id="one"  value="1" name="selection" class="hidden peer " required>
+          <label for="one" class="box rounded-full p-2 w-10 text-center cursor-pointer text-gray-400  bg-gray-800 hover:bg-orange-500 active:bg-gray-400 text-sm"><p>1</p></label>
+        
+           <input type="radio" id="two" value="2" name="selection" class="hidden peer">
+           <label for="two" class="box rounded-full p-2 w-10 text-center peer-checked:text-blue-500 cursor-pointer bg-gray-800 text-gray-400 hover:bg-orange-500 text-sm">2</label>
+        
+          <input type="radio" id="three"  value="3" name="selection" class="hidden peer">
+          <label for="three" class="box rounded-full p-2 w-10 text-center peer-checked:text-blue-500 cursor-pointer bg-gray-800 text-gray-400 hover:bg-orange-500 text-sm">3</label>
+   
+           <input type="radio" id="four"   value="4" name="selection" class="hidden peer">
+           <label for="four" class="box rounded-full p-2 w-10 text-center peer-checked:text-blue-500 cursor-pointer bg-gray-800 text-gray-400 hover:bg-orange-500 text-sm">4</label>
+        
+          <input type="radio" id="five"  value="5" name="selection" class="hidden peer">
+          <label for="five" class="box rounded-full p-2 w-10 text-center peer-checked:text-blue-500 cursor-pointer bg-gray-800 text-gray-400 hover:bg-orange-500 text-sm">5</label>
+       
+        
+      </div>
+      <button id="btn" class="mx-auto w-full text-center rounded-full text-white hover:text-orange-500 font-semibold  bg-orange-500 hover:bg-white p-2">SUBMIT</button>
+    </div>
+
+    <!-- Thank you state start -->
+    <div id= "container" class=" hidden thankyou container flex-col justify-center items-center mx-auto w-4/5 md:w-2/6 md:p-10 sm:h-70 rounded-2xl p-5">
+        <div class="w-2/5">
+          <img src="./images/illustration-thank-you.svg" />
+        </div>
+        <p id="output" class="box rounded-full p-2 text-xs bg-gray-800 text-orange-500 font-medium my-5"></p>
+        <p class="text-center text-2xl text-white font-semibold mb-3">Thank you!</p>
+        <p class="text-center text-xs lg:text-sm text-gray-500 font-medium mb-3"> We appreciate you taking the time to give a rating. If
+        you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+      
+        
+       
+         
+
+        <!-- Thank you state end -->
+
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Abayomi</a>.
+        </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
